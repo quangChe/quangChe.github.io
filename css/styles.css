@@ -61,13 +61,6 @@ ul {
     background-color: #222222;
     color: white;
 }
-.profile-links {
-    margin-bottom: 50px;
-}
-.profile-links a {
-    margin: 0px 20px 0px 20px;
-    color: #5a7494;
-}
 section {
     padding: 50px 0;
 }
@@ -173,7 +166,6 @@ header {
     background-image: url('../img/header.jpg');
     text-align: center;
     color: white;
-    box-shadow: 0px -1px -20px 0px rgba(46, 61, 73, 0.2)
 }
 header .header-content {
     position: relative;
@@ -226,16 +218,59 @@ header .header-content .header-content-inner p {
         margin-right: auto;
     }
 }
+summary.clickable-links {
+    color: #fff;
+    margin: 40px auto 0 auto;
+    padding: 2px 20px;
+    width: 280px;
+    font-size: 14px;
+    background-color: #525659;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    box-shadow: 0px -2px 10px 0px rgba(46, 61, 73, 0.3);
+}
+summary.clickable-links:active {
+    box-shadow: none;
+}
+.bio-expand {
+    background-color: #fafafa;
+    border-radius: 5px;
+    padding: 25px 0px;
+    box-shadow: 0px 1px 10px 0px rgba(46, 61, 73, 0.2);
+}
 .bio-table {
-    margin: 20px auto 0 auto;
+    margin: 0 auto;
     font-weight: 300;
-    max-width: 100%;
+    width: 300px;
 }
 .bio-table th, td {
     padding-bottom: 15px;
 }
 .bio-head {
-    padding-right: 10px;
+    padding-left: 10px;
+}
+.bio-table td {
+    padding-left: 10px;
+}
+.profile-links {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.profile-links a {
+    margin: 0px 20px 0px 20px;
+    color: #5a7494;
+}
+.profile-links i {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 5px 18px;
+    border-radius: 30px;
+    background-color: #525659;
+    box-shadow: 0px 2px 20px 0px rgba(46, 61, 73, 0.2);
+}
+.profile-links i:hover {
+    box-shadow: none;
 }
 .rating {
     margin-left: 5px;
