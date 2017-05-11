@@ -54,8 +54,7 @@ ul {
     background-color: #fff;
 }
 .bg-primary img {
-    margin: 30px auto 20px auto;
-    opacity: .9;
+    margin: 20px auto 0px auto;
 }
 .bg-dark {
     background-color: #222222;
@@ -156,7 +155,8 @@ section {
 }
 header {
     position: relative;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     min-height: auto;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -174,15 +174,11 @@ header .header-content {
     width: 100%;
 }
 header .header-content .header-content-inner h1 {
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-top: 100px;
-    margin-bottom: 0;
-    font-size: 30px;
-    text-shadow: 1px 2px 3px black;
-}
-header .header-content .header-content-inner hr {
-    margin: 15px auto 28px auto;
+    font-weight: 300;
+    margin: 50px auto;
+    font-size: 50px;
+    max-width: 1000px;
+    text-shadow: 1px 3px 10px black;
 }
 header .header-content .header-content-inner p {
     font-weight: 300;
@@ -190,6 +186,14 @@ header .header-content .header-content-inner p {
     font-size: 16px;
     margin-bottom: 50px;
     text-shadow: 1px 2px 3px black;
+}
+header a.header-btn {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    left: 0;
+    font-weight: 100;
+    font-size: 16px;
 }
 @media (min-width: 768px) {
     header {
@@ -218,16 +222,26 @@ header .header-content .header-content-inner p {
         margin-right: auto;
     }
 }
+.bio-quote {
+    max-width: 600px;
+    margin: 0px auto 30px auto;
+    font-weight: 100;
+    font-weight: 300;
+}
 summary.clickable-links {
     color: #fff;
-    margin: 40px auto 0 auto;
-    padding: 2px 20px;
-    width: 280px;
-    font-size: 14px;
-    background-color: #525659;
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
-    box-shadow: 0px -2px 10px 0px rgba(46, 61, 73, 0.3);
+    margin: 30px auto 0px auto;
+    padding: 5px;
+    width: 150px;
+    font-size: 12px;
+    background-color: #5a7494;
+    border-radius: 20px;
+    box-shadow: 0px -2px 10px 0px rgba(46, 61, 73, 0.2);
+    position: relative;
+}
+summary.clickable-links:hover {
+    opacity: .65;
+    transition: .7s;
 }
 summary.clickable-links:active {
     box-shadow: none;
@@ -235,7 +249,8 @@ summary.clickable-links:active {
 .bio-expand {
     background-color: #fafafa;
     border-radius: 5px;
-    padding: 25px 0px;
+    margin-top: -13px;
+    padding: 50px 0px;
     box-shadow: 0px 1px 10px 0px rgba(46, 61, 73, 0.2);
 }
 .bio-table {
@@ -266,11 +281,11 @@ summary.clickable-links:active {
     margin-top: 10px;
     padding: 5px 18px;
     border-radius: 30px;
-    background-color: #525659;
+    background-color: #5a7494;
     box-shadow: 0px 2px 20px 0px rgba(46, 61, 73, 0.2);
 }
-.profile-links i:hover {
-    box-shadow: none;
+.profile-links a:hover {
+    opacity: .5;
 }
 .rating {
     margin-left: 5px;
@@ -281,6 +296,7 @@ h2.section-heading {
 }
 h3.section-heading {
     color: #222222;
+    margin-top: 60px;
 }
 .attr-box {
     max-width: 400px;
@@ -298,8 +314,11 @@ h3.section-heading {
     }
 }
 .attr-box h3 {
-    color: #5a7494;
+    color: #525659;
     margin-bottom: 15px;
+}
+.attr-box i {
+    color: #525659;
 }
 .attr-box p {
     margin-bottom: 0;
@@ -332,6 +351,7 @@ h3.section-heading {
 }
 #project-display {
     background-color: #525659;
+    opacity: .85;
 }
 .projects-box {
     position: relative;
@@ -406,7 +426,7 @@ h3.section-heading {
     margin: 50px auto 85px auto;
 }
 #contact i {
-    color: #5a7494;
+    color: #525659;
 }
 #contact a {
     font-weight: 400;
