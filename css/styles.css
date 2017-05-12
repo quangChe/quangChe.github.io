@@ -190,7 +190,7 @@ header .header-content .header-content-inner p {
 header a.header-btn {
     position: absolute;
     width: 100%;
-    bottom: 20px;
+    bottom: 35px;
     left: 0;
     font-weight: 100;
     font-size: 16px;
@@ -334,20 +334,6 @@ h3.section-heading {
     font-family: "Lato";
     font-weight: 300;
     font-size: 14px;
-}
-#mobile-view {
-    display: block;
-}
-#desktop-view {
-    display: none;
-}
-@media (min-width: 768px) {
-    #mobile-view {
-        display: none;
-    }
-    #desktop-view {
-        display: block;
-    }
 }
 #project-display {
     background-color: #525659;
