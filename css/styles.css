@@ -176,55 +176,58 @@ header .header-content {
 #dummy {
     display: none;
 }
-header .header-content .header-content-inner h1 {
+.head-top {
     font-weight: 300;
-    margin: 50px auto;
+    margin: 50px auto 20px auto;
     font-size: 50px;
-    max-width: 1000px;
     text-shadow: 1px 3px 10px black;
 }
-.waypoint-1,
+.head-bot {
+    font-size: 25px;
+    font-weight: 100;
+    margin-left: 180px;
+}
+.head-name {
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+.waypoint-1a,
+.waypoint-1b,
 .waypoint-2,
 .waypoint-3 {
     opacity: 0;
 }
-.waypoint-1.animated,
+.waypoint-1a.animated,
+.waypoint-1b.animated,
 .waypoint-2.animated,
 .waypoint-3.animated {
     opacity: 1;
 }
 @media (max-width: 768px) {
-    header .header-content .header-content-inner h1 {
-        margin: 150px auto 100px auto;
+    header {
+        background-image: none;
+        background: #3A3A3A;
+    }
+    .head-top {
+        margin: 180px auto 20px auto;
         font-size: 28px;
+    }
+    .head-bot {
+        color: #87a4c7;
+        font-size: 25px;
+        margin-left: 15px;
     }
 }
 @media (max-width: 360px) {
     header .header-content .header-content-inner h1 {
         font-weight: 300;
-        margin: 160px auto 100px auto;
+        margin: 160px auto 10px auto;
         font-size: 20px;
     }
-    .head-desc {
-        margin-top: 10px;
+    .head-bot {
+        font-size: 18px;
     }
-}
-.head-name {
-    font-weight: 400;
-    font-size: 1.2em;
-}
-.head-desc {
-    font-size: .8em;
-    display: block;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-header .header-content .header-content-inner p {
-    font-weight: 300;
-    color: white;
-    font-size: 16px;
-    margin-bottom: 50px;
-    text-shadow: 1px 2px 3px black;
 }
 header a.header-btn {
     position: absolute;
