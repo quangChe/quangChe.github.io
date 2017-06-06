@@ -18,10 +18,11 @@
         <link href="Static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700">
 
+        <!-- Animate CSS -->
+        <link href="css/animate.css" rel="stylesheet">
+
         <!-- Custom CSS -->
         <link href="css/styles.css" rel="stylesheet">
-
-
     </head>
 
     <body id="page-top">
@@ -61,10 +62,13 @@
         <header class="text-center">
             <div class="header-content">
                 <div class="header-content-inner">
-                    <h1>Hi, I'm Quang Che, an aspiring full-stack web developer.</h1>
+                    <h1 class="waypoint-1 text-left">
+                        Hi, I'm <span class="head-name">Quang Che</span><br/>
+                        <span class="head-desc">-aspiring full-stack web developer.</span>
+                    </h1>
                 </div>
             </div>
-            <a href="#bio" class="page-scroll header-btn">More About Me<br><i class="fa fa-arrow-circle-down"></i></a>
+            <a href="#bio" class="page-scroll header-btn waypoint-2">More About Me<br/><i class="fa fa-arrow-circle-down"></i></a>
         </header>
 
         <!-- Biography Section -->
@@ -77,7 +81,7 @@
                         <img src="img/my_pic.png" alt="Self portrait.">
                         <details>
                             <summary class="clickable-links">View Details</summary>
-                            <div class="bio-expand">
+                            <div class="bio-expand waypoint-3">
                                 <p class="bio-quote">
                                     "I am a novel web developer with a passion for programming, and I aim
                                     to become the best full-stack web developer I could possibly be."
@@ -585,6 +589,9 @@
 
         <!-- jQuery -->
         <script src="Static/jquery/jquery.min.js"></script>
+
+        <!-- Waypoints -->
+        <script src="Static/waypoints/jquery.waypoints.min.js"></script>
 
         <!-- Bootstrap Core JavaScript -->
         <script src="Static/bootstrap/js/bootstrap.min.js"></script>

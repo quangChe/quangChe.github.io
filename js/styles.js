@@ -1,6 +1,30 @@
 (function($) {
     "use strict"; // Start of use strict
 
+    // Animated header with Waypoints and Animate CSS
+    $(document).ready(function() {
+        // Hero h1 heading animation
+        $('.waypoint-1').waypoint(function(direct) {
+            $('.waypoint-1').addClass('animated fadeInDownBig');
+        }, {
+            offset: '100%'
+        });
+
+        // Hero scroll button animation
+        $('.waypoint-2').waypoint(function(direct) {
+            $('.waypoint-2').addClass('animated fadeInUpBig');
+        }, {
+            offset: '100%'
+        });
+    });
+
+    // Bio section expand animation
+    $('details').on('click', 'summary', function() {
+        $('.waypoint-3').waypoint(function(direct) {
+            $('.waypoint-3').addClass('animated fadeInRight');
+        });
+    });
+
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $(document).on('click', 'a.page-scroll', function(event) {
         var $anchor = $(this);
