@@ -168,10 +168,19 @@ header {
     color: white;
 }
 header .header-content {
-    position: relative;
-    text-align: center;
     padding: 100px 15px 100px;
     width: 100%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 0 50px;
+}
+header .header-content .header-content-inner {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 #dummy {
     display: none;
@@ -183,14 +192,23 @@ header .header-content {
     text-shadow: 1px 3px 10px black;
 }
 .head-bot {
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 100;
     margin-left: 180px;
+    text-shadow: 1px 3px 10px black;
 }
 .head-name {
     font-weight: 400;
     font-size: 1.5em;
-    margin-left: 10px;
+    margin-left: 2%;
+}
+.header-btn {
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    left: 0;
+    font-weight: 100;
+    font-size: 20px;
 }
 .waypoint-1a,
 .waypoint-1b,
@@ -200,68 +218,52 @@ header .header-content {
 }
 .waypoint-1a.animated,
 .waypoint-1b.animated,
-.waypoint-2.animated,
+.waypoint-2.animated {
+    opacity: 1;
+    animation-duration: 2.5s;
+}
 .waypoint-3.animated {
     opacity: 1;
 }
 @media (max-width: 768px) {
+    header .header-content {
+        padding-left: 20px;
+        padding-right: 0;
+    }
     header {
         background-image: none;
         background: #3A3A3A;
     }
     .head-top {
-        margin: 180px auto 20px auto;
         font-size: 28px;
     }
     .head-bot {
         color: #87a4c7;
-        font-size: 25px;
-        margin-left: 15px;
+        font-size: 20px;
+        margin-left: 25px;
+        font-weight: 300;
+    }
+    .header-btn {
+        font-size: 18px;
+        bottom: 70px;
     }
 }
-@media (max-width: 360px) {
-    header .header-content .header-content-inner h1 {
+@media (max-width: 400px) {
+    header .header-content {
+        padding-left: 10px;
+        padding-right: 0;
+    }
+    .head-top {
         font-weight: 300;
-        margin: 160px auto 10px auto;
         font-size: 20px;
     }
     .head-bot {
-        font-size: 18px;
+        font-size: 16px;
+        margin-left: 15px;
     }
-}
-header a.header-btn {
-    position: absolute;
-    width: 100%;
-    bottom: 45px;
-    left: 0;
-    font-weight: 100;
-    font-size: 16px;
-}
-@media (min-width: 768px) {
-    header {
-        min-height: 100%;
-    }
-    header .header-content {
-        position: absolute;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-        padding: 0 50px;
-    }
-    header .header-content .header-content-inner {
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    header .header-content .header-content-inner h1 {
-        font-size: 50px;
-    }
-    header .header-content .header-content-inner p {
-        font-size: 18px;
-        max-width: 80%;
-        margin-left: auto;
-        margin-right: auto;
+    .header-btn {
+        font-size: 14px;
+        bottom: 55px;
     }
 }
 .bio-quote {
