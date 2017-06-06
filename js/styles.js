@@ -2,7 +2,7 @@
     "use strict"; // Start of use strict
 
     // Animated header with Waypoints and Animate CSS
-    $(document).ready(function() {
+    $(window).on('load', function() {
         // Hero h1 heading animation
         $('.waypoint-1').waypoint(function(direct) {
             $('.waypoint-1').addClass('animated fadeInDownBig');

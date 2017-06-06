@@ -173,12 +173,25 @@ header .header-content {
     padding: 100px 15px 100px;
     width: 100%;
 }
+#dummy {
+    display: none;
+}
 header .header-content .header-content-inner h1 {
     font-weight: 300;
     margin: 50px auto;
     font-size: 50px;
     max-width: 1000px;
     text-shadow: 1px 3px 10px black;
+}
+.waypoint-1,
+.waypoint-2,
+.waypoint-3 {
+    opacity: 0;
+}
+.waypoint-1.animated,
+.waypoint-2.animated,
+.waypoint-3.animated {
+    opacity: 1;
 }
 @media (max-width: 768px) {
     header .header-content .header-content-inner h1 {
