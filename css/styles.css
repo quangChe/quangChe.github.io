@@ -201,13 +201,18 @@ header .header-content .header-content-inner {
     font-size: 1.5em;
     margin-left: 2%;
 }
-.header-btn {
+.header-btn-section {
     position: absolute;
     width: 100%;
     bottom: 30px;
     left: 0;
     font-weight: 100;
     font-size: 20px;
+}
+.header-btn {
+    padding: 10px 50px;
+    border: 2px solid white;
+    border-radius: 50px;
 }
 .waypoint-1a,
 .waypoint-1b,
@@ -244,7 +249,7 @@ header .header-content .header-content-inner {
         margin-left: 25px;
         font-weight: 300;
     }
-    .header-btn {
+    .header-btn-section {
         font-size: 18px;
         bottom: 70px;
     }
@@ -262,7 +267,7 @@ header .header-content .header-content-inner {
         font-size: 16px;
         margin-left: 15px;
     }
-    .header-btn {
+    .header-btn-section {
         font-size: 14px;
         bottom: 55px;
     }
