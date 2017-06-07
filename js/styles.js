@@ -7,7 +7,7 @@
         $('.waypoint-1a').waypoint(function(direct) {
             $('.waypoint-1a').addClass('animated fadeInLeftBig');
         }, {
-            offset: '100%'
+            offset: 9999
         });
 
         $('.waypoint-1b').waypoint(function(direct) {
