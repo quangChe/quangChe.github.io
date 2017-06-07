@@ -78,10 +78,10 @@
                     <div class="col-lg-8 col-lg-offset-2 text-center">
                         <h2 class="section-heading">Info</h2>
                         <hr class="primary">
-                        <img src="img/my_pic.png" alt="Self portrait.">
-                        <details>
+                        <img class="sr-pic" src="img/my_pic.png" alt="Self portrait.">
+                        <details class="sr-button">
                             <summary class="clickable-links">View Details</summary>
-                            <div class="bio-expand waypoint-3">
+                            <div class="bio-expand waypoint-4">
                                 <p class="bio-quote">
                                     "I am a novel web developer with a passion for programming, and I aim
                                     to become the best full-stack web developer I could possibly be."
@@ -219,8 +219,25 @@
 
         <!-- Projects Section -->
         <section class="no-padding" id="projects">
-            <div class="container-fluid">
+            <div class="container-fluid waypoint-3">
                 <div id="project-display" class="row no-gutter">
+                    <!-- Project 7: -->
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="#" class="projects-box clickable-links"  data-toggle="modal" data-target="#project7">
+                             <img src="img/projects/thumbnail/loganalysis.jpg" class="img-responsive" alt="SQL database analysis project image.">
+                             <div class="projects-box-caption">
+                                 <div class="projects-box-caption-content">
+                                     <div class="projects-name">
+                                         SQL Database Analysis
+                                     </div>
+                                     <hr class="light">
+                                     <div class="projects-category">
+                                         A program that utilizes PostgreSQL to analyze data from a hypothetical news company
+                                     </div>
+                                 </div>
+                             </div>
+                        </a>
+                    </div>
                     <!-- Project 6: -->
                     <div class="col-lg-4 col-sm-6">
                         <a href="#" class="projects-box clickable-links"  data-toggle="modal" data-target="#project6">
@@ -232,7 +249,7 @@
                                      </div>
                                      <hr class="light">
                                      <div class="projects-category">
-                                         A multi-user blog for sharing, voting and discussing insightful thoughts.
+                                         A multi-user blog for sharing, voting and discussing insightful thoughts
                                      </div>
                                  </div>
                              </div>
@@ -249,7 +266,7 @@
                                      </div>
                                      <hr class="light">
                                      <div class="projects-category">
-                                         A camping web app for users to share, comment and discover different campsites around the world.
+                                         A camping web app for users to share, comment and discover different campsites around the world
                                      </div>
                                  </div>
                              </div>
@@ -266,7 +283,7 @@
                                      </div>
                                      <hr class="light">
                                      <div class="projects-category">
-                                         A universal blog page with basic CRUD functions for blog posts.
+                                         A universal blog page with basic CRUD functions for blog posts
                                      </div>
                                  </div>
                              </div>
@@ -283,7 +300,7 @@
                                      </div>
                                      <hr class="light">
                                      <div class="projects-category">
-                                         A color game where one must match color boxes with the provided rgb color values.
+                                         A color game where one must match color boxes with the provided rgb color values
                                      </div>
                                  </div>
                              </div>
@@ -300,7 +317,7 @@
                                      </div>
                                      <hr class="light">
                                      <div class="projects-category">
-                                         A patatap mockup which plays melodic sounds and animations when users click on keyboard keys.
+                                         A patatap mockup which plays melodic sounds and animations when users click on keyboard keys
                                      </div>
                                  </div>
                              </div>
@@ -317,7 +334,7 @@
                                      </div>
                                      <hr class="light">
                                      <div class="projects-category">
-                                         A personal to-do list with functions to create, check off and delete to-do items.
+                                         A personal to-do list with functions to create, check off and delete to-do items
                                      </div>
                                  </div>
                              </div>
@@ -352,6 +369,41 @@
 
         <!-- Project Modals: -->
         <aside>
+            <!-- Project 7: -->
+            <div class="modal fade" id="project7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel6" aria-hidden="true">
+                 <div class="modal-dialog">
+                      <div class="modal-content">
+                           <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel6">SQL Database Analysis</h4>
+                           </div>
+                           <div class="modal-body">
+                                <img class="img-responsive" src="img/projects/modal/loganalysis.jpg" alt="SQL Database Analysis project image.">
+                                <h5 class="modal-detail">Details:</h5>
+                                <p class="body-intro">
+                                    This is a Python program that I wrote to practice the conventions of the DB-API for SQL databases. The program
+                                    utilizes advanced view creation, SQL queries, subqueries and the syntaxes of PostgreSQL to
+                                    analyze data from a news database. The analysis returns information on the most popular news articles, authors and
+                                    error percentages for page requests on given dates.
+                                </p>
+                                <h6 class="modal-features">Features:</h6>
+                                <ul class="tools-list">
+                                    <li>Written in Python3</li>
+                                    <li>Conforms to the DB-API for relational databases</li>
+                                    <li>Runs on virtual vagrant environment</li>
+                                    <li>Queries through over 1.6 million rows of data</li>
+                                    <li>Future-proofed and capable of accomodating countless more rows of data to be added to the specific database</li>
+                                </ul>
+                                <p class="alert-msg">Note: Please view GitHub README before attempting to set up this program.</p>
+                           </div>
+                           <div class="modal-footer">
+                                <button type="button" class="btn btn-default">
+                                     <a href="https://github.com/quangChe/news-sql-data" target="_blank">GitHub</a>
+                                </button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                           </div>
+                      </div>
+                 </div>
+            </div>
             <!-- Project 6: -->
             <div class="modal fade" id="project6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel6" aria-hidden="true">
                  <div class="modal-dialog">

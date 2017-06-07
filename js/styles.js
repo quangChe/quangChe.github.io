@@ -7,27 +7,34 @@
         $('.waypoint-1a').waypoint(function(direct) {
             $('.waypoint-1a').addClass('animated fadeInLeftBig');
         }, {
-            offset: '100%'
+            offset: '70%'
         });
 
         $('.waypoint-1b').waypoint(function(direct) {
             $('.waypoint-1b').addClass('animated fadeInRightBig');
         }, {
-            offset: '100%'
+            offset: '70%'
         });
 
         // Hero scroll button animation
         $('.waypoint-2').waypoint(function(direct) {
-            $('.waypoint-2').addClass('animated fadeInUpBig');
+            $('.waypoint-2').addClass('animated fadeInUp');
         }, {
-            offset: '100%'
+            offset: '90%'
+        });
+
+        //My projects
+        $('.waypoint-3').waypoint(function(direct) {
+            $('.waypoint-3').addClass('animated fadeIn');
+        }, {
+            offset: '80%'
         });
     });
 
     // Bio section expand animation
     $('details').on('click', 'summary', function() {
-        $('.waypoint-3').waypoint(function(direct) {
-            $('.waypoint-3').addClass('animated fadeInRight');
+        $('.waypoint-4').waypoint(function(direct) {
+            $('.waypoint-4').addClass('animated slideInLeft');
         });
     });
 
@@ -60,8 +67,13 @@
 
     // Initialize and Configure Scroll Reveal Animation
     window.sr = ScrollReveal();
+    sr.reveal('.sr-pic', {
+        duration: 800,
+        scale: 0.3,
+        distance: '0px'
+    }, 200);
     sr.reveal('.sr-icons', {
-        duration: 600,
+        duration: 1200,
         scale: 0.3,
         distance: '0px'
     }, 200);
