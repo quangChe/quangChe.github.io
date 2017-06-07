@@ -4,7 +4,7 @@
     // Animated header with Waypoints and Animate CSS
     $(window).on('load', function() {
         $('.waypoint-head').waypoint(function(direct) {
-            $('.waypoint-head').addClass('animated slideInLeft');
+            $('.waypoint-head').addClass('animated slideInDown');
         }, {
             offset: 0
         });
