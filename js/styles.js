@@ -3,6 +3,11 @@
 
     // Animated header with Waypoints and Animate CSS
     $(window).on('load', function() {
+        $('.waypoint-head').waypoint(function(direct) {
+            $('.waypoint-head').addClass('animated slideInLeft');
+        }, {
+            offset: 0
+        });
         // Hero h1 heading animation
         $('.waypoint-1a').waypoint(function(direct) {
             $('.waypoint-1a').addClass('animated fadeInLeftBig');
