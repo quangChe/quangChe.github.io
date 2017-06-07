@@ -7,20 +7,20 @@
         $('.waypoint-1a').waypoint(function(direct) {
             $('.waypoint-1a').addClass('animated fadeInLeftBig');
         }, {
-            offset: '70%'
+            offset: '100%'
         });
 
         $('.waypoint-1b').waypoint(function(direct) {
             $('.waypoint-1b').addClass('animated fadeInRightBig');
         }, {
-            offset: '70%'
+            offset: '100%'
         });
 
         // Hero scroll button animation
         $('.waypoint-2').waypoint(function(direct) {
             $('.waypoint-2').addClass('animated fadeInUp');
         }, {
-            offset: '90%'
+            offset: '100%'
         });
 
         //My projects
