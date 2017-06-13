@@ -13,15 +13,22 @@ hr.primary {
 }
 hr.light {
     border-color: white;
-    max-width: 40px;
-    border-width: 2px;
+    max-width: 100px;
+    border-width: 1px;
     margin-top: 10px;
+}
+.shadow-lg {
+    text-shadow: 1px 3px 6px rgba(0, 0, 0, .2);
+}
+.shadow-sm {
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, .2);
 }
 a {
     -webkit-transition: all 0.35s;
     -moz-transition: all 0.35s;
     transition: all 0.35s;
     color: #5a7494;
+    outline: 0;
 }
 a:link,
 a:hover,
@@ -55,6 +62,9 @@ ul {
 .bg-primary img {
     margin: 20px auto 0px auto;
 }
+.bg-grey {
+    background-color: #c2c6a9;
+}
 .bg-dark {
     background-color: #222222;
     color: white;
@@ -78,21 +88,18 @@ section {
     color: #5a7494;
     font-family: 'Lato', Arial, sans-serif;
     font-weight: 700;
-    text-transform: uppercase;
-}
-.navbar-default .navbar-header .navbar-brand:hover,
-.navbar-default .navbar-header .navbar-brand:focus {
-    color: #5a7494;
 }
 .navbar-default .navbar-header .navbar-toggle {
-    font-weight: 300;
-    font-size: 12px;
+    font-weight: 100;
+    font-size: 16px;
     color: #222222;
-    text-transform: uppercase;
+    border: none;
+}
+.navbar-default .navbar-header .navbar-toggle i {
+    font-weight: 100;
 }
 .navbar-default .nav > li > a,
 .navbar-default .nav > li > a:focus {
-    text-transform: uppercase;
     font-weight: 300;
     font-size: 13px;
     color: #222222;
@@ -245,7 +252,6 @@ header .header-content .header-content-inner {
         text-align: center;
     }
     .head-bot {
-        color: #87a4c7;
         font-size: 20px;
         font-weight: 300;
         text-align: center;
@@ -282,36 +288,46 @@ header .header-content .header-content-inner {
     }
 }
 .bio-quote {
+    color: #5a7494;
     max-width: 600px;
     margin: 0px auto 30px auto;
     font-weight: 100;
     font-weight: 300;
 }
-summary.clickable-links {
-    color: #fff;
+summary {
     margin: 30px auto 0px auto;
-    padding: 5px;
-    width: 150px;
-    font-size: 12px;
-    background-color: #5a7494;
-    border-radius: 20px;
-    box-shadow: 0px -2px 10px 0px rgba(46, 61, 73, 0.2);
+    width: 200px;
+    background-image: url('img/my_pic.png');
+    grayscale: (100%);
     position: relative;
-    transition: .7s;
+    box-shadow: none;
     z-index: 999;
 }
-summary.clickable-links:hover {
-    opacity: .65;
-    transition: .7s;
+summary::-webkit-details-marker {
+    display: none;
 }
-summary.clickable-links:active {
+summary:active,
+summary:focus {
     box-shadow: none;
+    outline: 0;
+}
+img.detail-btn {
+    filter: grayscale(100%);
+    margin-left: 0;
+    width: 100%;
+}
+img.detail-btn:hover {
+    transition: .5s;
+    filter: grayscale(0);
+    cursor: pointer;
 }
 .bio-expand {
-    background-color: #fafafa;
+    background-color: #F8ECC2;
     border-radius: 5px;
-    margin-top: -13px;
-    padding: 50px 0px;
+    margin-top: -140px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    padding-right: 20px;
     box-shadow: 0px 1px 10px 0px rgba(46, 61, 73, 0.2);
 }
 .bio-table {
@@ -322,31 +338,8 @@ summary.clickable-links:active {
 .bio-table th, td {
     padding-bottom: 15px;
 }
-.bio-head {
-    padding-left: 10px;
-}
 .bio-table td {
     padding-left: 10px;
-}
-.profile-links {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.profile-links a {
-    margin: 0px 20px 0px 20px;
-    color: #5a7494;
-}
-.profile-links i {
-    color: #fff;
-    font-size: 16px;
-    margin-top: 10px;
-    padding: 5px 18px;
-    border-radius: 30px;
-    background-color: #5a7494;
-    box-shadow: 0px 2px 20px 0px rgba(46, 61, 73, 0.2);
-}
-.profile-links a:hover {
-    opacity: .5;
 }
 .rating {
     margin-left: 5px;
@@ -357,11 +350,29 @@ h2.section-heading {
 }
 h3.section-heading {
     color: #222222;
-    margin-top: 60px;
+    margin-top: 100px;
+}
+.attr-row {
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 .attr-box {
     max-width: 400px;
     margin: 50px auto 0;
+}
+.attr-box i {
+    color: #525659;
+}
+.attribute {
+    font-size: 2.5em;
+    font-weight: 300;
+    padding: 20px 0;
+}
+.attr-desc {
+    font-weight: 300;
+    color: #525659;
+    font-size: 1.2em;
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1)
 }
 @media (min-width: 768px) {
     .attr-box {
@@ -374,16 +385,6 @@ h3.section-heading {
         padding-left: 50px;
     }
 }
-.attr-box h3 {
-    color: #525659;
-    margin-bottom: 15px;
-}
-.attr-box i {
-    color: #525659;
-}
-.attr-box p {
-    margin-bottom: 0;
-}
 #resume {
     padding-bottom: 100px;
 }
@@ -395,6 +396,9 @@ h3.section-heading {
     font-family: "Lato";
     font-weight: 300;
     font-size: 14px;
+}
+#projects {
+    background-color: #525659;
 }
 #project-display {
     background: transparent;
@@ -462,23 +466,66 @@ h3.section-heading {
         font-size: 22px;
     }
 }
-.text-primary {
-    color: #5a7494;
-}
 .no-gutter > [class*='col-'] {
     padding-right: 0;
     padding-left: 0;
 }
-.contact-quote {
-    margin: 50px auto 85px auto;
+
+#contact {
+    padding-bottom: 50px;
 }
 #contact i {
-    color: #525659;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
-#contact a {
-    font-weight: 400;
-    color: #5a7494;
-    text-decoration: underline;
+.contact-quote {
+    font-weight: 100;
+    font-size: 1.5em;
+    margin: 70px auto 30px auto;
+}
+#contact-links {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+}
+#contact-links .soc-icon i {
+    color: #fff;
+    font-size: 12px;
+    padding: 11px 13px;
+    border-radius: 49%;
+    background-color: #222222;
+    margin-bottom: 2px;
+    box-shadow: 0px 1px 8px rgba(46, 61, 73, 0.2);
+}
+.bot-logo {
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+}
+@media (max-width: 768px) {
+    .bot-logo {
+        width: 80px;
+        left: 0px;
+        bottom: 51px;
+    }
+}
+.soc-icon {
+    margin-top: 10px;
+}
+.soc-icon p {
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #222222;
+    text-shadow: 0px 1px 8px rgba(46, 61, 73, 0.2);
+}
+.soc-icon a {
+    text-decoration: none;
+    margin: 0;
+}
+.soc-icon a:hover {
+    transition: .2s;
+    opacity: .5;
 }
 .clickable-links,
 .clickable-links:hover {

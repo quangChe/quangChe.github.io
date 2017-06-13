@@ -39,7 +39,7 @@
     // Bio section expand animation
     $('details').on('click', 'summary', function() {
         $('.waypoint-4').waypoint(function(direct) {
-            $('.waypoint-4').addClass('animated slideInLeft');
+            $('.waypoint-4').addClass('animated fadeInRightBig');
         });
     });
 
