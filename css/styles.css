@@ -501,13 +501,13 @@ h3.section-heading {
 }
 .bot-logo {
     position: absolute;
-    left: 20px;
+    right: 20px;
     bottom: 10px;
 }
 @media (max-width: 768px) {
     .bot-logo {
         width: 80px;
-        left: 0px;
+        right: 0px;
         bottom: 51px;
     }
 }
