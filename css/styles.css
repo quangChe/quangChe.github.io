@@ -15,7 +15,7 @@ hr.light {
     border-color: white;
     max-width: 100px;
     border-width: 1px;
-    margin-top: 10px;
+    margin-top: 0;
 }
 .shadow-lg {
     text-shadow: 1px 3px 6px rgba(0, 0, 0, .2);
@@ -311,15 +311,20 @@ summary:focus {
     box-shadow: none;
     outline: 0;
 }
-img.detail-btn {
+.detail-btn {
+    -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     margin-left: 0;
     width: 100%;
 }
-img.detail-btn:hover {
+.detail-btn:hover,
+details[open] .detail-btn {
     transition: .5s;
+    -webkit-filter: grayscale(0);
     filter: grayscale(0);
     cursor: pointer;
+    -webkit-filter: drop-shadow(3px -2px 5px rgba(50, 50, 50, .3));
+    filter: drop-shadow( 3px -2px 5px rgba(50, 50, 50, .3));
 }
 .bio-expand {
     background-color: #F8ECC2;
@@ -519,13 +524,12 @@ h2.section-heading {
     box-shadow: 0px 1px 8px rgba(46, 61, 73, 0.2);
 }
 .bot-logo {
-    position: absolute;
-    right: 8px;
-    bottom: 5px;
+    -webkit-filter: drop-shadow( 0px -5px 5px black );
+    filter: drop-shadow( 0px -5px 5px black );
 }
 @media (max-width: 1060px) {
     .bot-logo {
-        width: 200px;
+        width: 150px;
         right: 4px;
         bottom: 29px;
     }
