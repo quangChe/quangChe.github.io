@@ -70,6 +70,21 @@
         }
     })
 
+    // Initialize and Configure Owl carousel
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:30,
+        nav:true,
+        responsive:{
+            0:{
+                items:3
+            },
+            600:{
+                items:4
+            }
+        }
+    })
+
     // Initialize and Configure Scroll Reveal Animation
     window.sr = ScrollReveal();
     sr.reveal('.sr-pic', {

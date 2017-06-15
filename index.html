@@ -27,6 +27,13 @@
     <!-- Animate CSS -->
     <link href="css/animate.css" rel="stylesheet">
 
+    <!-- Owl Carousel -->
+    <link href="Static/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+    <link href="Static/owlcarousel/owl.theme.default.css" rel="stylesheet">
+
+    <!-- DevIcon -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
     <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet">
 </head>
@@ -83,6 +90,8 @@
     <!-- Biography Section -->
     <section class="bg-primary" id="bio">
         <div class="container">
+
+            <!-- Info Collapse Row -->
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <details>
@@ -99,7 +108,7 @@
                             <table class="bio-table">
                                 <tr>
                                     <th class="bio-head text-right">Full Name:</th>
-                                    <td class="text-left">Quang N. Che ( "K'wang N. Chi" )</td>
+                                    <td class="text-left">Quang N. Che</td>
                                 </tr>
                                 <tr>
                                     <th class="bio-head text-right">Age:</th>
@@ -114,11 +123,11 @@
                                     <td class="text-left">Greater Los Angeles Area</td>
                                 </tr>
                                 <tr>
-                                    <th class="bio-head text-right">Compatible Roles:</th>
-                                    <td class="text-left">Junior Level Front-End, Back-End or Full-Stack Web Development</td>
+                                    <th class="bio-head text-right">Roles:</th>
+                                    <td class="text-left">Junior Front-End, Back-End, or Full-Stack Web Developer</td>
                                 </tr>
                                 <tr>
-                                    <th class="bio-head text-right">Programming Languages:</th>
+                                    <th class="bio-head text-right">Expertise:</th>
                                     <td class="text-left">
                                         HTML5/CSS
                                         <span class="rating">
@@ -148,21 +157,35 @@
                                         </span>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <th class="bio-head text-right">Familiar Technologies:</th>
-                                    <td class="text-left">
-                                        Bootstrap, SemanticUI, jQuery, Node.js, Express.js, webapp2, Jinja2, MongoDB, GQL, SQL (PostgreSQL and SQLite) Git/Github, Mac OS X, Unix Command Line, Photoshop
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th class="bio-head text-right">In Progress:</th>
-                                    <td class="text-left">React and more SQL databases</td>
-                                </tr>
                             </table>
-                        </div>
+                            <h3 class="tools-head">Proficient With:</h3>
+                            <div id="tools-list" class="owl-carousel owl-theme">
+                                <i class="item devicon-html5-plain-wordmark"></i>
+                                <i class="item devicon-css3-plain-wordmark"></i>
+                                <i class="item devicon-javascript-plain"></i>
+                                <i class="item devicon-python-plain-wordmark"></i>
+                                <i class="item devicon-jquery-plain-wordmark"></i>
+                                <i class="item devicon-nodejs-plain-wordmark"></i>
+                                <i class="item devicon-express-original"></i>
+                                <i class="item devicon-mongodb-plain-wordmark"></i>
+                                <i class="item devicon-postgresql-plain-wordmark"></i>
+                                <i class="item devicon-react-original-wordmark"></i>
+                                <i class="item devicon-webpack-plain-wordmark"></i>
+                                <i class="item devicon-babel-plain"></i>
+                                <i class="item devicon-bootstrap-plain-wordmark"></i>
+                                <i class="item devicon-git-plain"></i>
+                                <i class="item devicon-github-plain"></i>
+                                <i class="item devicon-heroku-original-wordmark"></i>
+                                <i class="item devicon-photoshop-line"></i>
+                                <i class="item devicon-atom-original-wordmark"></i>
+                                <i class="item devicon-apple-original"></i>
+                                <i class="item devicon-chrome-plain-wordmark"></i>
+                            </div>
                     </details>
                 </div>
             </div>
+
+            <!-- Attributes Rows -->
             <div class="row attr-row">
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="attr-box">
@@ -202,6 +225,7 @@
     <section class="no-padding bg-grey" id="projects">
         <div class="container-fluid waypoint-3">
             <div id="project-display" class="row no-gutter">
+
                 <!-- Project 7: -->
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="projects-box clickable-links"  data-toggle="modal" data-target="#project7">
@@ -219,6 +243,7 @@
                          </div>
                     </a>
                 </div>
+
                 <!-- Project 6: -->
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="projects-box clickable-links"  data-toggle="modal" data-target="#project6">
@@ -253,6 +278,7 @@
                          </div>
                     </a>
                 </div>
+
                 <!-- Project 4: -->
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="projects-box clickable-links"  data-toggle="modal" data-target="#project4">
@@ -270,6 +296,7 @@
                          </div>
                     </a>
                 </div>
+
                 <!-- Project 3: -->
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="projects-box clickable-links"  data-toggle="modal" data-target="#project3">
@@ -287,6 +314,7 @@
                          </div>
                     </a>
                 </div>
+
                 <!-- Project 2: -->
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="projects-box clickable-links"  data-toggle="modal" data-target="#project2">
@@ -304,6 +332,7 @@
                          </div>
                     </a>
                 </div>
+
                 <!-- Project 1: -->
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="projects-box clickable-links"  data-toggle="modal" data-target="#project1">
@@ -322,7 +351,9 @@
                     </a>
                 </div>
             </div>
+            <!-- /.projects-display -->
         </div>
+        <!-- /.container-fluid  -->
     </section>
 
 
@@ -340,12 +371,16 @@
             </div>
             <div class="row">
                 <div class="col-md-4 col-md-offset-2 col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x sr-contact"></i>
-                    <p>626-674-1136</p>
+                    <a href="tel:6266741136">
+                        <i class="fa fa-phone fa-3x sr-contact"></i>
+                        <p>626-674-1136</p>
+                    </a>
                 </div>
                 <div class="col-md-4 col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:quang.n.che@gmail.com">quang.n.che@gmail.com</a></p>
+                    <a href="mailto:quang.n.che@gmail.com">
+                        <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                        <p>Quang.N.Che@gmail.com</p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -652,10 +687,14 @@
     </aside>
 
     <!-- jQuery -->
-    <script src="Static/jquery/jquery.min.js"></script>
+    <script src="Static/jquery/jquery-3.2.1.min.js"></script>
 
     <!-- Waypoints -->
     <script src="Static/waypoints/jquery.waypoints.min.js"></script>
+
+    <!-- Owl Carousel -->
+    <script src="Static/owlcarousel/owl.carousel.min.js"></script>
+
 
     <!-- Bootstrap Core JavaScript -->
     <script src="Static/bootstrap/js/bootstrap.min.js"></script>
