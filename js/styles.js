@@ -15,12 +15,6 @@
             offset: 9999
         });
 
-        $('.waypoint-1b').waypoint(function(direct) {
-            $('.waypoint-1b').addClass('animated fadeInRightBig');
-        }, {
-            offset: '100%'
-        });
-
         // Hero scroll button animation
         $('.waypoint-2').waypoint(function(direct) {
             $('.waypoint-2').addClass('animated fadeInUp');
@@ -28,11 +22,18 @@
             offset: '100%'
         });
 
+        //Click notice for biography expand
+        $('.waypoint-notice').waypoint(function(direct) {
+            $('.waypoint-notice').addClass('animated flash');
+        }, {
+            offset: '80%'
+        });
+
         //My projects
         $('.waypoint-3').waypoint(function(direct) {
             $('.waypoint-3').addClass('animated fadeIn');
         }, {
-            offset: '80%'
+            offset: '75%'
         });
     });
 
