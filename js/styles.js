@@ -8,9 +8,10 @@
         }, {
             offset: 0
         });
+
         // Hero h1 heading animation
-        $('.waypoint-1a').waypoint(function(direct) {
-            $('.waypoint-1a').addClass('animated fadeInLeftBig');
+        $('.waypoint-1').waypoint(function(direct) {
+            $('.waypoint-1').addClass('animated fadeInLeftBig');
         }, {
             offset: 9999
         });
@@ -22,25 +23,34 @@
             offset: '100%'
         });
 
-        //Click notice for biography expand
-        $('.waypoint-notice').waypoint(function(direct) {
-            $('.waypoint-notice').addClass('animated flash');
+        // Expertise
+        $('.waypoint-right').waypoint(function(direct) {
+            $('.waypoint-right').addClass('animated slideInRight');
+        }, {
+            offset: '80%'
+        });
+        $('.waypoint-right2').waypoint(function(direct) {
+            $('.waypoint-right2').addClass('animated slideInRight');
+        }, {
+            offset: '80%'
+        });
+
+        $('.waypoint-left').waypoint(function(direct) {
+            $('.waypoint-left').addClass('animated slideInLeft');
+        }, {
+            offset: '80%'
+        });
+        $('.waypoint-left2').waypoint(function(direct) {
+            $('.waypoint-left2').addClass('animated slideInLeft');
         }, {
             offset: '80%'
         });
 
         //My projects
         $('.waypoint-3').waypoint(function(direct) {
-            $('.waypoint-3').addClass('animated fadeIn');
+            $('.waypoint-3').addClass('animated zoomIn');
         }, {
-            offset: '75%'
-        });
-    });
-
-    // Bio section expand animation
-    $('details').on('click', 'summary', function() {
-        $('.waypoint-4').waypoint(function(direct) {
-            $('.waypoint-4').addClass('animated fadeInRightBig');
+            offset: '90%'
         });
     });
 
@@ -82,6 +92,9 @@
             },
             600:{
                 items:4
+            },
+            1000:{
+                items:6
             }
         }
     })

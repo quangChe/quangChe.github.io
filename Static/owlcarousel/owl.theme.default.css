@@ -11,12 +11,12 @@
   text-align: center;
   -webkit-tap-highlight-color: transparent; }
   .owl-theme .owl-nav [class*='owl-'] {
-    color: #222222;
+    color: white;
     font-size: 14px;
     font-weight: 100;
     margin: 0px 5px;
     padding: 4px 7px;
-    background: #D6D6D6;
+    background: #222222;
     display: inline-block;
     cursor: pointer;
     border-radius: 3px; }
