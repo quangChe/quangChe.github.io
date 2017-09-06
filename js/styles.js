@@ -25,30 +25,30 @@
 
         // Expertise
         $('.waypoint-right').waypoint(function(direct) {
-            $('.waypoint-right').addClass('animated slideInRight');
+            $('.waypoint-right').addClass('animated zoomInRight');
         }, {
             offset: '80%'
         });
         $('.waypoint-right2').waypoint(function(direct) {
-            $('.waypoint-right2').addClass('animated slideInRight');
+            $('.waypoint-right2').addClass('animated zoomInRight');
         }, {
             offset: '80%'
         });
 
         $('.waypoint-left').waypoint(function(direct) {
-            $('.waypoint-left').addClass('animated slideInLeft');
+            $('.waypoint-left').addClass('animated zoomInLeft');
         }, {
             offset: '80%'
         });
         $('.waypoint-left2').waypoint(function(direct) {
-            $('.waypoint-left2').addClass('animated slideInLeft');
+            $('.waypoint-left2').addClass('animated zoomInLeft');
         }, {
             offset: '80%'
         });
 
         //My projects
         $('.waypoint-3').waypoint(function(direct) {
-            $('.waypoint-3').addClass('animated zoomIn');
+            $('.waypoint-3').addClass('animated zoomInUp');
         }, {
             offset: '90%'
         });
