@@ -16,6 +16,13 @@
             offset: 9999
         });
 
+        // Hero h2 description animation
+        $('.waypoint-1b').waypoint(function(direct) {
+            $('.waypoint-1b').addClass('animated fadeInUp');
+        }, {
+            offset: 9999
+        });
+
         // Hero scroll button animation
         $('.waypoint-2').waypoint(function(direct) {
             $('.waypoint-2').addClass('animated fadeInUp');
